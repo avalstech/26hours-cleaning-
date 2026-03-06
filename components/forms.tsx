@@ -69,7 +69,7 @@ export function BookingForm() {
       <div className="grid gap-4 md:grid-cols-2">
         <div className="grid gap-2">
           <Label htmlFor="postcode">Postcode</Label>
-          <Input id="postcode" name="postcode" required />
+          <Input id="postcode" name="postcode" autoCapitalize="characters" required />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="serviceType">Service</Label>
@@ -99,7 +99,7 @@ export function BookingForm() {
         </div>
         <div className="grid gap-2">
           <Label htmlFor="preferredDate">Preferred date & time</Label>
-          <Input id="preferredDate" name="preferredDate" required />
+          <Input id="preferredDate" name="preferredDate" type="datetime-local" required />
         </div>
       </div>
 
@@ -184,7 +184,7 @@ export function CleanerApplyForm() {
         </div>
         <div className="grid gap-2 md:col-span-2">
           <Label htmlFor="postcode">Primary postcode</Label>
-          <Input id="postcode" name="postcode" required />
+          <Input id="postcode" name="postcode" autoCapitalize="characters" required />
         </div>
       </div>
 

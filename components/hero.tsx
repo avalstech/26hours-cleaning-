@@ -26,7 +26,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.08 }}
             className="mt-4 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
           >
-            A premium clean home experience, delivered on your schedule.
+            Book trusted home cleaners in minutes.
           </motion.h1>
 
           <motion.p
@@ -35,7 +35,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.16 }}
             className="mt-4 max-w-xl text-base font-medium leading-relaxed text-slate-600"
           >
-            Book reliable cleaners in minutes for one-off deep cleans, end-of-tenancy resets, and recurring home care. Clear pricing, vetted professionals, and seamless support from start to finish.
+            Choose one-off, deep, or recurring cleaning with transparent pricing and vetted professionals across the UK.
           </motion.p>
 
           <motion.div
@@ -45,10 +45,10 @@ export function Hero() {
             className="mt-6 flex flex-wrap gap-3"
           >
             <Button asChild size="lg">
-              <Link href="/book">Book a Cleaner →</Link>
+              <Link href="/book">Check availability</Link>
             </Button>
             <Button asChild size="lg" variant="secondary">
-              <Link href="/#services">Explore services</Link>
+              <Link href="/#services">View services</Link>
             </Button>
           </motion.div>
 
@@ -60,7 +60,7 @@ export function Hero() {
           >
             {[
               ["24/7", "Flexible scheduling"],
-              ["Top-rated", "Trusted local professionals"],
+              ["Top-rated", "Local vetted professionals"],
               ["Safe", "Verified profiles"],
               ["Fast", "Instant matching"]
             ].map(([tag, label]) => (
@@ -89,7 +89,7 @@ export function Hero() {
           />
           <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/70 bg-white/85 p-4 backdrop-blur shadow-lg">
             <div className="flex items-center justify-between text-sm font-extrabold text-slate-800">
-              <span>Next available cleaner</span>
+              <span>Next cleaner window</span>
               <span className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs">In 45 mins</span>
             </div>
             <div className="mt-2 flex items-center justify-between text-sm font-extrabold text-slate-800">

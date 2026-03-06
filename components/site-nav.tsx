@@ -12,6 +12,7 @@ export function SiteNav() {
           <span className="relative h-10 w-10 overflow-hidden rounded-xl border border-brand-200 bg-white">
             <Image src="/logo.svg" alt="26HoursCleaning Services logo" fill className="object-cover" priority />
           </span>
+          <span className="hidden text-sm text-slate-800 sm:inline">26HoursCleaning Services</span>
         </Link>
 
         <nav className="hidden items-center gap-2 rounded-2xl border border-slate-200 bg-white/90 p-1.5 shadow-sm md:flex">
