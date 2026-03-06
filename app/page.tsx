@@ -14,14 +14,14 @@ export default function HomePage() {
           <CardContent className="pt-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
-                <div className="text-lg font-black tracking-tight">Check availability in your area</div>
+                <div className="text-lg font-black tracking-tight">Check availability near you</div>
                 <div className="mt-1 text-sm font-semibold text-slate-600">
-                  Enter your postcode, select a service, and we’ll match you with nearby cleaners.
+                  Enter your postcode and service type to see nearby vetted cleaners.
                 </div>
               </div>
               <div className="flex flex-wrap gap-2">
                 <Button asChild>
-                  <Link href="/book">Find cleaners</Link>
+                  <Link href="/book">Check availability</Link>
                 </Button>
                 <Button asChild variant="secondary">
                   <Link href="/join">Join as cleaner</Link>
@@ -41,7 +41,7 @@ export default function HomePage() {
         <div className="rounded-[30px] border border-brand-200/80 bg-gradient-to-br from-brand-50 via-white to-emerald-50 p-7 shadow-[0_26px_60px_rgba(15,23,42,0.12)]">
           <div className="grid gap-6 md:grid-cols-2 md:items-center">
             <div>
-              <h2 className="text-3xl font-black tracking-tight">Ready to book your next clean?</h2>
+              <h2 className="text-3xl font-black tracking-tight">Ready to schedule your next clean?</h2>
               <p className="mt-3 text-sm font-semibold text-slate-600">
                 Tell us what you need and we’ll follow up with the best matches for your location and schedule.
               </p>

@@ -11,10 +11,9 @@ export function SiteFooter() {
               <Image src="/logo.svg" alt="26HoursCleaning Services logo" fill className="object-cover" />
             </div>
             <div>
-              <div className="font-extrabold tracking-tight">26HoursCleaning Services</div>
+              <div className="font-extrabold tracking-tight text-slate-900">26HoursCleaning Services</div>
               <div className="text-sm font-semibold text-slate-600">Trusted cleaners across the UK.</div>
             </div>
-            <div className="text-sm font-semibold text-slate-600">Trusted cleaners across the UK.</div>
           </div>
 
           <div className="flex flex-wrap gap-2 text-sm font-semibold text-slate-600">
@@ -24,7 +23,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-8 text-sm font-semibold text-slate-500">
+        <div className="mt-8 border-t border-slate-200/80 pt-6 text-sm font-semibold text-slate-500">
           © {new Date().getFullYear()} 26HoursCleaning. All rights reserved.
         </div>
       </div>
