@@ -80,8 +80,8 @@ export function Hero() {
         >
           <div className="absolute inset-0 bg-gradient-to-br from-brand-200/50 via-white/60 to-emerald-200/40" />
           <Image
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=80"
-            alt="Cleaner preparing a tidy living room"
+            src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=1400&q=80"
+            alt="House cleaning service"
             width={1200}
             height={900}
             className="relative h-[420px] w-full object-cover"

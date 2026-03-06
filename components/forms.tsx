@@ -52,24 +52,24 @@ export function BookingForm() {
     <form id="bookingForm" action={async (fd) => onSubmit(fd)} className="grid gap-4">
       <div className="grid gap-2">
         <Label htmlFor="fullName">Full name</Label>
-        <Input id="fullName" name="fullName" placeholder="Your name" required />
+        <Input id="fullName" name="fullName" required />
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
         <div className="grid gap-2">
           <Label htmlFor="email">Email</Label>
-          <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <Input id="email" name="email" type="email" required />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="phone">Phone</Label>
-          <Input id="phone" name="phone" placeholder="+44..." required />
+          <Input id="phone" name="phone" required />
         </div>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
         <div className="grid gap-2">
           <Label htmlFor="postcode">Postcode</Label>
-          <Input id="postcode" name="postcode" placeholder="SW1A 1AA" required />
+          <Input id="postcode" name="postcode" required />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="serviceType">Service</Label>
@@ -91,21 +91,21 @@ export function BookingForm() {
       <div className="grid gap-4 md:grid-cols-3">
         <div className="grid gap-2">
           <Label htmlFor="bedrooms">Bedrooms</Label>
-          <Input id="bedrooms" name="bedrooms" placeholder="e.g., 2" />
+          <Input id="bedrooms" name="bedrooms" />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="bathrooms">Bathrooms</Label>
-          <Input id="bathrooms" name="bathrooms" placeholder="e.g., 1" />
+          <Input id="bathrooms" name="bathrooms" />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="preferredDate">Preferred date & time</Label>
-          <Input id="preferredDate" name="preferredDate" placeholder="e.g., 2026-03-20 10:00" required />
+          <Input id="preferredDate" name="preferredDate" required />
         </div>
       </div>
 
       <div className="grid gap-2">
         <Label htmlFor="notes">Notes (optional)</Label>
-        <Textarea id="notes" name="notes" placeholder="Any special instructions, parking, pets, supplies, etc." />
+        <Textarea id="notes" name="notes" />
       </div>
 
       <Button type="submit" size="lg" disabled={status.type === "loading"}>
@@ -120,9 +120,6 @@ export function BookingForm() {
         </div>
       )}
 
-      <p className="text-xs font-semibold text-slate-500">
-        MVP note: this form can email your team via AWS SES when configured. Add Stripe later to accept payments.
-      </p>
     </form>
   );
 }
@@ -166,28 +163,28 @@ export function CleanerApplyForm() {
     <form id="cleanerForm" action={async (fd) => onSubmit(fd)} className="grid gap-4">
       <div className="grid gap-2">
         <Label htmlFor="fullName">Full name</Label>
-        <Input id="fullName" name="fullName" placeholder="Your name" required />
+        <Input id="fullName" name="fullName" required />
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
         <div className="grid gap-2">
           <Label htmlFor="email">Email</Label>
-          <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <Input id="email" name="email" type="email" required />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="phone">Phone</Label>
-          <Input id="phone" name="phone" placeholder="+44..." required />
+          <Input id="phone" name="phone" required />
         </div>
       </div>
 
       <div className="grid gap-4 md:grid-cols-3">
         <div className="grid gap-2">
           <Label htmlFor="city">City</Label>
-          <Input id="city" name="city" placeholder="e.g., London" required />
+          <Input id="city" name="city" required />
         </div>
         <div className="grid gap-2 md:col-span-2">
           <Label htmlFor="postcode">Primary postcode</Label>
-          <Input id="postcode" name="postcode" placeholder="e.g., E14 5AB" required />
+          <Input id="postcode" name="postcode" required />
         </div>
       </div>
 
@@ -205,12 +202,12 @@ export function CleanerApplyForm() {
 
       <div className="grid gap-2">
         <Label htmlFor="experienceYears">Years of experience</Label>
-        <Input id="experienceYears" name="experienceYears" placeholder="e.g., 3" required />
+        <Input id="experienceYears" name="experienceYears" required />
       </div>
 
       <div className="grid gap-2">
         <Label htmlFor="notes">Notes (optional)</Label>
-        <Textarea id="notes" name="notes" placeholder="Tell us about your availability, equipment, transport, insurance, etc." />
+        <Textarea id="notes" name="notes" />
       </div>
 
       <Button type="submit" size="lg" disabled={status.type === "loading"}>
@@ -259,15 +256,15 @@ export function ContactForm() {
     <form id="contactForm" action={async (fd) => onSubmit(fd)} className="grid gap-4">
       <div className="grid gap-2">
         <Label htmlFor="name">Name</Label>
-        <Input id="name" name="name" placeholder="Your name" required />
+        <Input id="name" name="name" required />
       </div>
       <div className="grid gap-2">
         <Label htmlFor="email">Email</Label>
-        <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+        <Input id="email" name="email" type="email" required />
       </div>
       <div className="grid gap-2">
         <Label htmlFor="message">Message</Label>
-        <Textarea id="message" name="message" placeholder="How can we help?" required />
+        <Textarea id="message" name="message" required />
       </div>
 
       <Button type="submit" size="lg" disabled={status.type === "loading"}>
