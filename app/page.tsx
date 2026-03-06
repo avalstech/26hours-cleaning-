@@ -10,7 +10,7 @@ export default function HomePage() {
       <Hero />
 
       <section className="mx-auto max-w-6xl px-5 pb-6">
-        <Card className="border-brand-200 bg-white/80">
+        <Card className="border-brand-200/80 bg-white/90 shadow-[0_16px_38px_rgba(15,23,42,0.08)]">
           <CardContent className="pt-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
@@ -38,7 +38,7 @@ export default function HomePage() {
       <Testimonials />
 
       <section className="mx-auto max-w-6xl px-5 py-12">
-        <div className="rounded-3xl border border-brand-200 bg-gradient-to-br from-brand-50 via-white to-emerald-50 p-7 shadow-[0_18px_45px_rgba(15,23,42,0.08)]">
+        <div className="rounded-[30px] border border-brand-200/80 bg-gradient-to-br from-brand-50 via-white to-emerald-50 p-7 shadow-[0_26px_60px_rgba(15,23,42,0.12)]">
           <div className="grid gap-6 md:grid-cols-2 md:items-center">
             <div>
               <h2 className="text-3xl font-black tracking-tight">Ready to book your next clean?</h2>

@@ -20,7 +20,7 @@ export function HowItWorks() {
       </div>
       <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {steps.map((s) => (
-          <Card key={s.title} className="overflow-hidden">
+          <Card key={s.title} className="overflow-hidden border-brand-100/80 bg-white/90 shadow-[0_16px_38px_rgba(15,23,42,0.08)] transition hover:-translate-y-0.5 hover:shadow-[0_22px_50px_rgba(15,23,42,0.12)]">
             <CardHeader>
               <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-brand-200 bg-brand-50 text-brand-700">
                 {s.icon}
@@ -80,7 +80,7 @@ export function Services() {
 
       <div className="mt-7 grid gap-4 md:grid-cols-2">
         {services.map((s) => (
-          <Card key={s.title} className="overflow-hidden">
+          <Card key={s.title} className="overflow-hidden border-brand-100/80 bg-white/90 shadow-[0_16px_38px_rgba(15,23,42,0.08)] transition hover:-translate-y-0.5 hover:shadow-[0_22px_50px_rgba(15,23,42,0.12)]">
             <div className="relative h-44 w-full">
               <Image src={s.img} alt={s.title} fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-900/10 via-transparent to-emerald-700/10" />
@@ -120,7 +120,7 @@ export function Pricing() {
 
       <div className="mt-7 grid gap-4 md:grid-cols-3">
         {tiers.map((t) => (
-          <Card key={t.title}>
+          <Card key={t.title} className="border-brand-100/80 bg-white/90 shadow-[0_16px_38px_rgba(15,23,42,0.08)]">
             <CardContent className="pt-6">
               <div className="inline-flex rounded-full border border-brand-200 bg-brand-50 px-3 py-2 text-xs font-extrabold text-slate-800">
                 {t.badge}
@@ -158,7 +158,7 @@ export function Testimonials() {
 
       <div className="mt-7 grid gap-4 md:grid-cols-3">
         {items.map((i) => (
-          <Card key={i.who}>
+          <Card key={i.who} className="border-brand-100/80 bg-white/90 shadow-[0_16px_38px_rgba(15,23,42,0.08)]">
             <CardContent className="pt-6">
               <p className="text-sm font-semibold text-slate-700 leading-relaxed">“{i.quote}”</p>
               <div className="mt-4 flex items-center justify-between text-sm font-extrabold text-slate-600">

@@ -1,18 +1,16 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-slate-200/70 bg-white/60">
+    <footer className="border-t border-slate-200/70 bg-white/70">
       <div className="mx-auto max-w-6xl px-5 py-10">
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-3">
-            <div className="grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-br from-brand-600 to-emerald-400 text-white font-extrabold">
-              26
+          <div className="flex items-center gap-4">
+            <div className="relative h-16 w-[290px]">
+              <Image src="/logo.svg" alt="" fill className="object-contain" />
             </div>
-            <div>
-              <div className="font-extrabold tracking-tight">26HoursCleaning Services</div>
-              <div className="text-sm font-semibold text-slate-600">Trusted cleaners across the UK.</div>
-            </div>
+            <div className="text-sm font-semibold text-slate-600">Trusted cleaners across the UK.</div>
           </div>
 
           <div className="flex flex-wrap gap-2 text-sm font-semibold text-slate-600">
