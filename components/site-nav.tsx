@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export function SiteNav() {
   return (
-    <div className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#f7fbf9]/70 backdrop-blur">
+    <div className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#f7fbf9]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
         <Link href="/" className="flex items-center gap-3 font-extrabold tracking-tight">
           <span className="relative h-10 w-10 overflow-hidden rounded-xl border border-brand-200 bg-white">
@@ -14,7 +14,7 @@ export function SiteNav() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-2 md:flex">
+        <nav className="hidden items-center gap-2 rounded-2xl border border-slate-200 bg-white/90 p-1.5 shadow-sm md:flex">
           {[
             ["How it works", "/#how"],
             ["Services", "/#services"],
@@ -25,7 +25,7 @@ export function SiteNav() {
             <Link
               key={href}
               href={href}
-              className="rounded-xl px-3 py-2 text-sm font-semibold text-slate-600 hover:bg-brand-50 hover:text-slate-900"
+              className="rounded-xl px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-brand-50 hover:text-slate-900"
             >
               {label}
             </Link>

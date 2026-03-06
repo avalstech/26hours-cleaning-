@@ -24,9 +24,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.08 }}
-            className="mt-4 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl"
+            className="mt-4 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
           >
-            Find trusted cleaners, anytime. Anywhere in the UK.
+            A premium clean home experience, delivered on your schedule.
           </motion.h1>
 
           <motion.p
@@ -35,8 +35,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.16 }}
             className="mt-4 max-w-xl text-base font-medium leading-relaxed text-slate-600"
           >
-            Book reliable cleaning professionals in minutes. One-time deep cleans, end-of-tenancy refresh,
-            or recurring home and office cleaning with transparent pricing and secure payments.
+            Book reliable cleaners in minutes for one-off deep cleans, end-of-tenancy resets, and recurring home care. Clear pricing, vetted professionals, and seamless support from start to finish.
           </motion.p>
 
           <motion.div
@@ -61,6 +60,7 @@ export function Hero() {
           >
             {[
               ["24/7", "Flexible scheduling"],
+              ["Top-rated", "Trusted local professionals"],
               ["Safe", "Verified profiles"],
               ["Fast", "Instant matching"]
             ].map(([tag, label]) => (
@@ -76,7 +76,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, delay: 0.12 }}
-          className="relative overflow-hidden rounded-3xl border border-brand-200 bg-white shadow-[0_18px_45px_rgba(15,23,42,0.08)]"
+          className="relative overflow-hidden rounded-[30px] border border-brand-200/80 bg-white shadow-[0_30px_70px_rgba(15,23,42,0.12)]"
         >
           <div className="absolute inset-0 bg-gradient-to-br from-brand-200/50 via-white/60 to-emerald-200/40" />
           <Image
@@ -87,7 +87,7 @@ export function Hero() {
             className="relative h-[420px] w-full object-cover"
             priority
           />
-          <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/60 bg-white/75 p-4 backdrop-blur shadow-md">
+          <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/70 bg-white/85 p-4 backdrop-blur shadow-lg">
             <div className="flex items-center justify-between text-sm font-extrabold text-slate-800">
               <span>Next available cleaner</span>
               <span className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs">In 45 mins</span>
