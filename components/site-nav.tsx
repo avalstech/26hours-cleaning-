@@ -8,9 +8,9 @@ export function SiteNav() {
   return (
     <div className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#f7fbf9]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
-        <Link href="/" className="flex items-center">
-          <span className="relative h-14 w-[230px] overflow-hidden rounded-2xl border border-slate-800 bg-black shadow-[0_12px_28px_rgba(2,8,23,0.25)]">
-            <Image src="/logo.svg" alt="" fill className="object-contain p-2" priority />
+        <Link href="/" className="flex items-center gap-3 font-extrabold tracking-tight">
+          <span className="relative h-10 w-10 overflow-hidden rounded-xl border border-brand-200 bg-white">
+            <Image src="/logo.svg" alt="26HoursCleaning Services logo" fill className="object-cover" priority />
           </span>
         </Link>
 

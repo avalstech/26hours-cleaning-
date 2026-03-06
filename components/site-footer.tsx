@@ -6,9 +6,13 @@ export function SiteFooter() {
     <footer className="border-t border-slate-200/70 bg-white/70">
       <div className="mx-auto max-w-6xl px-5 py-10">
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-4">
-            <div className="relative h-16 w-[255px] overflow-hidden rounded-2xl border border-slate-800 bg-black shadow-[0_12px_28px_rgba(2,8,23,0.2)]">
-              <Image src="/logo.svg" alt="" fill className="object-contain p-2" />
+          <div className="flex items-center gap-3">
+            <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-brand-200 bg-white">
+              <Image src="/logo.svg" alt="26HoursCleaning Services logo" fill className="object-cover" />
+            </div>
+            <div>
+              <div className="font-extrabold tracking-tight">26HoursCleaning Services</div>
+              <div className="text-sm font-semibold text-slate-600">Trusted cleaners across the UK.</div>
             </div>
             <div className="text-sm font-semibold text-slate-600">Trusted cleaners across the UK.</div>
           </div>
