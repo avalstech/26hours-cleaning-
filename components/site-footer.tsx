@@ -14,6 +14,7 @@ export function SiteFooter() {
               <div className="font-extrabold tracking-tight">26HoursCleaning Services</div>
               <div className="text-sm font-semibold text-slate-600">Trusted cleaners across the UK.</div>
             </div>
+            <div className="text-sm font-semibold text-slate-600">Trusted cleaners across the UK.</div>
           </div>
 
           <div className="flex flex-wrap gap-2 text-sm font-semibold text-slate-600">
